@@ -1,0 +1,25 @@
+:root {
+    --maim-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /*text color*/
+    --main-txt-cl: #000000;
+    --secondary-txt-cl: #757575;
+    --accent-cl: #2196F3;
+    --accent-btn-cl: #188CE8;
+    --nav-cl: #212121;
+    --hero-txt-cl: #ffffff;
+
+    /* letter spacing */
+    --ls-primary: 0.03em;
+    --ls-second: 0.02em;
+    --ls-thirt: 0.06em;
+
+    /* background color */
+    --main-bg-cl: #E5E5E5;
+    --secondary-bg-cl: #F5F4FA;
+    --dark-bg-cl: #2F303A;
+
+    /* Animation */
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

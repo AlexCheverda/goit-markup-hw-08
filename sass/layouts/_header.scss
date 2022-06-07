@@ -1,0 +1,130 @@
+/* -- HEADER -- */
+
+.header {
+    border-bottom: 1px solid #ECECEC
+}
+
+.header-logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: var(--ls-primary);
+    color: var(--accent-cl);
+}
+
+.header-logo__title--black {
+    color: var(--main-txt-cl); 
+}
+
+/* Main Nav */
+
+.main-nav {
+    display: flex;
+    align-items: center; 
+}
+
+/* Site Nav */
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav__item {
+    position: relative;
+    
+    &:not(:last-child) {
+        margin-right: 50px;  
+    }
+    
+    &--current::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        display: block;
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-cl);
+    }
+}
+
+.site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--ls-second);
+    text-decoration: none;
+    
+    color: var(--nav-cl);
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    
+    }
+
+    &:active {
+        color: var(--accent-cl);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &--current {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: var(--ls-second);
+    
+        color: var(--accent-cl);
+    }
+}
+
+
+
+/* Header Group */
+
+.header-group {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    align-items: center;
+}
+
+.header-group__link {
+    margin-left: 30px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--ls-second);
+    
+    color: var(--secondary-txt-cl);
+    text-decoration: none;
+    transition: color var(--animation);
+
+    &:not(:last-child) {
+        margin-left: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-cl);
+    }
+}
+
+
+
+.header-group__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
