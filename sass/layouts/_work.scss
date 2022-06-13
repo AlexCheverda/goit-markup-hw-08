@@ -1,12 +1,18 @@
 /* -- WORK -- */
 
 .work {
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
     /* outline: 1px solid plum; */
     justify-content: center;
     margin: 0 auto;
-}  
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    };
+        
+}
+ 
 
 .work__title {
     display: flex;

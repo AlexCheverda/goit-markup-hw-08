@@ -23,12 +23,17 @@
   <body>
     <!-- HEADER -->
 
-    <header class="header">
+    <!-- <header class="header">
       <nav class="container main-nav">
         <a href="./index.html" class="header-logo" aria-label="Логотип сайта Web Studio">
           <p class="header-logo__title">Web<span class="header-logo__title--black">Studio</span></p>
         </a>
-        <button type="button" class="menu-button">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"  
+          data-menu-button>
           <svg
             width="40"
             height="40"
@@ -37,6 +42,9 @@
             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          Контент меню
+        </div>
         <ul class="site-nav list">
           <li class="site-nav__item site-nav__item--current">
             <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
@@ -67,22 +75,25 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main>
       <!-- HERO -->
 
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container main-hero">
-          <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+          <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1> -->
+
+      
           <!-- Modal window -->
-          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+
+          <!-- <button class="btn" type="button" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal-wrapper">
+            <div class="modal-wrapper"> -->
 
               <!-- MODAL FORM -->
 
-              <form class="contact-form" name="contact-form" method="post">
+              <!-- <form class="contact-form" name="contact-form" method="post">
                 <div class="form-title">
                   <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
                 </div>                            
@@ -124,11 +135,11 @@
                   <a class="link-label" href="">Условия договора</a> 
                 </div>
                 <button class="btn form-btn" type="submit">Отправить</button>
-              </form>
+              </form> -->
 
             <!-- Button CLOSE-Modal  -->
 
-              <button class="modal-btn" data-modal-close>
+              <!-- <button class="modal-btn" data-modal-close>
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/icons.svg#close"></use>
                 </svg>
@@ -136,11 +147,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- ABOUT -->
 
-      <section class="about">
+      <section class="about section">
         <div class="container about__container">
           <h2 class="about__title section-title" hidden>Особенности</h2>
           <ul class="about__list list">
@@ -559,7 +570,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer no-padding">
+    <!-- <footer class="footer no-padding">
       <div class="container footer-section">
         <div class="footer-main">
           <a href="./index.html" class="footer-logo" aria-label="Логотип сайта Web Studio">
@@ -651,7 +662,8 @@
           </div>         
         </form>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
