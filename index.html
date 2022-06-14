@@ -572,78 +572,80 @@
 
     <footer class="footer no-padding">
       <div class="container footer-section">
-        <div class="footer-main">
-          <a href="./index.html" class="footer-logo" aria-label="Логотип сайта Web Studio">
-            <p class="footer-logo__title">Web<span class="footer-logo__title--white">Studio</span></p>
-          </a>
-          <address class="footer-group">
-            <p class="footer-group__contact">г.Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer-group__list list">
-              <li class="footer-group__item">
-                <a href="mailto:info@devstudio.com" class="footer-group__link">info@devstudio.com</a>
+        <div class="footer-block">
+          <div class="footer-main">
+            <a href="./index.html" class="footer-logo" aria-label="Логотип сайта Web Studio">
+              <p class="footer-logo__title">Web<span class="footer-logo__title--white">Studio</span></p>
+            </a>
+            <address class="footer-group">
+              <p class="footer-group__contact">г.Киев, пр-т Леси Украинки, 26</p>
+              <ul class="footer-group__list list">
+                <li class="footer-group__item">
+                  <a href="mailto:info@devstudio.com" class="footer-group__link">info@devstudio.com</a>
+                </li>
+                <li class="footer-group__item">
+                  <a href="tel+380961111111" class="footer-group__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-group">
+            <h3 class="join-title">Присоединяйтесь</h3>
+            <ul class="social list">
+              <li class="socials-item">
+                <a
+                  class="social-link link footer-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-group__item">
-                <a href="tel+380961111111" class="footer-group__link">+38 096 111 11 11</a>
+              <li class="socials-item">
+                <a
+                  class="social-link link footer-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Twitter"
+                >
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link link footer-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Facebook"
+                >
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link link footer-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Linkedin"
+                >
+                  <svg class="socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-group">
-          <h3 class="join-title">Присоединяйтесь</h3>
-          <ul class="social list">
-            <li class="socials-item">
-              <a
-                class="social-link link footer-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Instagram"
-              >
-                <svg class="socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link link footer-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Twitter"
-              >
-                <svg class="socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link link footer-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Facebook"
-              >
-                <svg class="socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="social-link link footer-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="иконка Linkedin"
-              >
-                <svg class="socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- Footer form -->
         <form class="footer-form">
@@ -651,9 +653,8 @@
             <h3 class="join-title">Подпишитесь на рассылку</h3>
           </div>
           <div class="footer-submit">
-            <label class="footer-label">
-              <input class="footer-input" type="text" name="footer-mail" placeholder="E-mail">
-            </label>
+            <label class="footer-label" for="footer-mail"></label>
+            <input class="footer-input" type="text" name="footer-mail" id="footer-mail" placeholder="E-mail">
             <button class="footer-btn" type="submit">
               <span class="btn-title">Подписаться</span>
               <svg class="btn-icon" width="24" height="24">

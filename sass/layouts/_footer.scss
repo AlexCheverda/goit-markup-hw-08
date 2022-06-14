@@ -71,6 +71,24 @@
     color: var(--hero-txt-cl);
 }
 
+/* Footer Block */
+
+.footer-block {
+
+    @include mq(tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        margin-bottom: 0;
+    }
+    
+}
+
 /* Footer Group */
 
 .footer-group {

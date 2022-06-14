@@ -64,8 +64,9 @@
     
     color: #FFFFFF;
 
-    // @include mq(tablet) {
-    // }
+    @include mq(tablet) {
+        margin-top: 0;
+    }
 
     @include mq(desktop) {
         margin-top: 0;
@@ -73,7 +74,7 @@
 }
 
 .footer-link {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
 
     background-color: rgba(255, 255, 255, 0.1);;
     color: #ffffff;
