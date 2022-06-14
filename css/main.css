@@ -1210,8 +1210,15 @@ p {
 
 /* -- CLIENTS -- */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -1224,7 +1231,7 @@ p {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .clients__title {
     font-weight: 700;
     font-size: 28px;
@@ -1240,24 +1247,25 @@ p {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .clients__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.clients__list {
+  margin: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1272,8 +1280,7 @@ p {
 }
 
 .clients__item {
-  margin-bottom: 30px;
-  margin-right: 30px;
+  margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1285,6 +1292,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: calc((100% - 2 * 30px) / 2);
   height: 92px;
   color: #AFB1B8;
   border: 1px solid #AFB1B8;
@@ -1298,31 +1306,15 @@ p {
   border-color: var(--accent-cl);
 }
 
-@media screen and (max-width: 479.98px) {
-  .clients__item {
-    width: 210px;
-  }
-  .clients__item:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .clients__item {
-    margin-right: 30px;
-    width: 226px;
-  }
-  .clients__item:nth-child(3n) {
-    margin-right: 0;
+    width: calc((100%-3*30px)/3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100%-6*30px)/6);
   }
 }
 
@@ -1548,7 +1540,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  /* padding-bottom: 60px; */
   width: 231px;
   margin-top: 20px;
 }

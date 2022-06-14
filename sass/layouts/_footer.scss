@@ -5,12 +5,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // display: flex;
-
     background-color: var(--dark-bg-cl);
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         display: flex;
@@ -18,10 +13,6 @@
 }
 
 .footer-section {
-    
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         display: flex;
@@ -30,13 +21,9 @@
 }
 
 .footer-main {
-    display: block;
-    
-    
-    text-align: center;
 
-    // @include mq(tablet) {
-    // }
+    display: block;  
+    text-align: center;
 
     @include mq(desktop) {
         display: block;
@@ -47,8 +34,7 @@
 
 /* Footer Logo */
 
-.footer-logo {
-    
+.footer-logo { 
 
     text-decoration: none;
     font-family: var(--secondary-font);
@@ -57,9 +43,6 @@
     line-height: 1.17;
     letter-spacing: var(--ls-primary);
     color: var(--accent-cl);
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         font-size: 26px;
@@ -92,19 +75,14 @@
 /* Footer Group */
 
 .footer-group {
-   
 
     display: inline;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    /* padding-bottom: 60px; */
+
     width: 231px;
     margin-top: 20px;
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         display: block;
@@ -113,11 +91,6 @@
 }
 
 .footer-group__item {
-    
-    
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         padding-top: 0;
@@ -127,9 +100,6 @@
 
 .footer-group__list {
     display: inline-block;
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         display: block;
@@ -154,9 +124,6 @@
     &:focus {
         color: var(--accent-cl);
     }
-
-    // @include mq(tablet) {
-    // }
 
     @include mq(desktop) {
         
