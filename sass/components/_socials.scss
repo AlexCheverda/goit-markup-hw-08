@@ -33,13 +33,26 @@
 
 /* Join Group */
 
-.join-group {  
+.join-group {
+    display: inline;
+    text-align: center;
+    
     width: 206px;
     height: 80px;
+
+    
     /* outline: 2px solid plum; */
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: block;
+        text-align: start;
+    }
 }
 
 .join-title {
+    margin-top: 60px;
     margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -50,9 +63,18 @@
     text-transform: uppercase;
     
     color: #FFFFFF;
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        margin-top: 0;
+    }
 }
 
 .footer-link {
+    margin-bottom: 60px;
+
     background-color: rgba(255, 255, 255, 0.1);;
     color: #ffffff;
     transition: color var(--animation), background-color var(--animation);
@@ -62,5 +84,11 @@
         background-color: var(--accent-cl);
         color: var(--hero-txt-cl);
     }
+
+    // @include mq(tablet) {
+    // }
+
+    // @include mq(desktop) {
+    // }
 }
 

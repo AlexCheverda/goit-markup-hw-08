@@ -1,33 +1,70 @@
 /* -- FOOTER -- */
 
 .footer {
-    display: flex;
+    
     padding-top: 60px;
     padding-bottom: 60px;
+
+    // display: flex;
+
     background-color: var(--dark-bg-cl);
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: flex;
+    }
 }
 
 .footer-section {
-    display: flex;
-    align-items: baseline;
+    
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer-main {
     display: block;
-    margin-right: 70px;
+    
+    
+    text-align: center;
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: block;
+        text-align: start;
+        margin-right: 70px;
+    }
 }
 
 /* Footer Logo */
 
 .footer-logo {
+    
 
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: var(--ls-primary);
     color: var(--accent-cl);
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .footer-logo__title--white {
@@ -37,24 +74,55 @@
 /* Footer Group */
 
 .footer-group {
-    display: block;
+   
+
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
     /* padding-bottom: 60px; */
     width: 231px;
     margin-top: 20px;
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: block;
+        text-align: start;
+    }
 }
 
 .footer-group__item {
-    padding-top: 0;
-    padding-bottom: 0;
+    
+    
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .footer-group__list {
-    display: block;
+    display: inline-block;
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        display: block;
+    }
 }
 
 .footer-group__link {
+    padding: 0 auto;
     margin-bottom: 9px;
-    margin-right: 70px;
+    margin-right: auto;
+    margin-left: auto;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -68,9 +136,18 @@
     &:focus {
         color: var(--accent-cl);
     }
+
+    // @include mq(tablet) {
+    // }
+
+    @include mq(desktop) {
+        
+        margin-right: 70px;
+    }
 }
 
 .footer-group__contact {
+    margin-top: 20px;
     margin-bottom: 9px;
 
     font-family: inherit;
@@ -79,4 +156,11 @@
     line-height: 1.71;
     letter-spacing: var(--ls-primary);
     color: var(--hero-txt-cl);
+
+    // @include mq(tablet) {
+    // }
+
+    // @include mq(desktop) {
+       
+    // }
 }

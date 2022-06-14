@@ -14,8 +14,10 @@
     // margin-top: 0;
     // margin-bottom: 0;
     // padding: 0;
+    
 
     @media screen and (max-width: 767.98px) {
+        margin: -15px;
         padding-top: 60px;
         padding-bottom: 60px;
         // display: block;
@@ -25,7 +27,6 @@
         &:not(:last-child) {
             margin-right: 30px;
         } 
-        
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -36,15 +37,6 @@
         flex-basis: calc(
             (100%-2*30px)/2
         );
-
-
-        &:nth-child(odd) {
-            margin-right: 30px;
-        }
-
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -52,8 +44,7 @@
         padding-bottom: 94px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;        
     }
 }
 
@@ -72,8 +63,11 @@
 }
 
 .team-card {
-    // width: 270px;
-    margin-right: 30px;
+    // display: flex;
+    
+    
+    
+    // margin-right: 30px;
 
     background-color: var(--hero-txt-cl);
 
@@ -88,39 +82,35 @@
 
     @media screen and (max-width: 767.98px) {
         
-        &:not(:last-child) {
-            margin-right: 30px;
-        } 
+        margin: 15px;
+        
+        // display: block;
+        width: 450px;
+        height: 622px;
+
+        
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // } 
         
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-        
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) { 
 
+        margin: 15px;
 
-        &:nth-child(odd) {
-            margin-right: 30px;
-        }
-
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
+        width: calc((100% - 2*30)/2);
     }
 
     @media screen and (min-width: 1200px) {
+        
+        margin-right: 30px;
+
         width: 270px;
-    // margin-right: 30px;
 
-    // background-color: var(--hero-txt-cl);
-
-    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    //             0px 1px 1px rgba(0, 0, 0, 0.14),
-    //             0px 2px 1px rgba(0, 0, 0, 0.2);
-    // border-radius: 0px 0px 4px 4px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+        &:last-child {
+            margin-right: 0;
+        }
         
     }
 }
