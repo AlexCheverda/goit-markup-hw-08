@@ -6,6 +6,12 @@ p {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list, .proj-list {
     padding: 0;
     margin: 0;

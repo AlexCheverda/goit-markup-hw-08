@@ -40,17 +40,7 @@
     justify-content: center;   
 
     
-    @include mq(tablet) {  
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    @include mq(desktop) {
-        display: flex;
-        flex-wrap: nowrap;
-
-    }
+    
 }
 
 .clients__item {
@@ -83,7 +73,7 @@
         // margin-right: 30px;
         // margin: 15px;
         // width: 226px;
-        width: calc((100%-3*30px)/3);
+        width: calc((100% - 3*30px)/3);
         
         
         // &:nth-child(3n) {
@@ -94,7 +84,7 @@
     @include mq(desktop) {
         // margin: 15px;
         // width: 170px;
-        width: calc((100%-6*30px)/6);
+        width: calc((100% - 6*30px)/6);
 
         // &:not(:last-child) {
         //     margin-right: 30px;

@@ -48,16 +48,13 @@
           
 //     // }
 
-@include mq(tablet) {
-    // display: flex;
-    // align-items: center; 
+// @include mq(tablet) {
     
-}
+// }
 
-@include mq(desktop) {
-    // display: flex;
-    // align-items: center; 
-}
+// @include mq(desktop) {
+    
+// }
      
 }
 
@@ -84,6 +81,7 @@
     border: none;
     background-color: transparent;
     z-index: 1000;
+    
 
     &:hover,
     &:focus {
@@ -125,19 +123,22 @@
     
 
     // 
-    // padding: 20px;
+    padding: 48px 40px;
     text-align: center;
     
+    
 
-    z-index: 100;
+    z-index: 10;
 
     @include mq(mobile-only) {
         display: none;
-        position: absolute;
+        // position: absolute;
+        position: fixed;
         height: 100vh;
         top: 0;
         left: 0;
         width: 100%;
+        
 
         &.is-open {
             display: block;
@@ -150,7 +151,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        padding: 0;
         flex-grow: 1;
         
     }
@@ -166,14 +167,16 @@
 /* Site Nav */
 
 .site-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 0;
-    padding-top: 48px;
+    display: block;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // margin-left: 0;
+    margin: 0;
+    padding: 0;
+    // padding-top: 48px;
     height: auto;
 
-    outline: 1px solid palevioletred;
+    // outline: 1px solid palevioletred;
 
     @include mq(tablet) {
        display: flex;
@@ -193,8 +196,8 @@
 
 .site-nav__item {
     position: relative;
-    // &:not(:last-child) {
-    //     margin-bottom: 32px;  
+    // &:not(:first-child) {
+    //     margin-top: 32px;  
     // }
 
     @include mq(tablet) {
@@ -226,9 +229,9 @@
 .site-nav__link {
     display: flex;
 
-    padding-top: 48px;
+    // padding-top: 48px;
     padding-bottom: auto;
-    margin-left: 40px;
+    // margin-left: 40px;
 
     
     font-weight: 500;
@@ -298,10 +301,11 @@
 
 .header-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
-    margin-left: 40px;
+    // margin-left: 40px;
     margin-top: 302px;
+   
 
 
     
@@ -310,7 +314,7 @@
     // padding: 0;
     
     // align-items: center;
-    outline: 1px solid teal;
+    // outline: 1px solid teal;
 
     @include mq(tablet) {
         display: flex;
@@ -354,7 +358,7 @@
     
     &:not(:last-child) {
         color: var(--accent-cl);
-        
+        margin-bottom: 32px;
     }
     
 

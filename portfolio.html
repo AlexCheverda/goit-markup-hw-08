@@ -24,11 +24,13 @@
     <!-- HEADER -->
 
     <header class="header">
+      
       <nav class="container main-nav">
-        <a href="./index.html" class="header-logo" aria-label="Логотип сайта Web Studio">
-          <p class="header-logo__title">Web<span class="header-logo__title--black">Studio</span></p>
-        </a>
-        <div class="drop-menu">
+        
+          <a href="./index.html" class="header-logo" aria-label="Логотип сайта Web Studio">
+            <p class="header-logo__title">Web<span class="header-logo__title--black">Studio</span></p>
+          </a>
+        
           <button
             type="button"
             class="menu-button"
@@ -44,39 +46,86 @@
             </svg>
           </button>
           <div class="menu-container" id="menu-container" data-menu>
-            Контент меню
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item site-nav__item--current">
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          
+            <ul class="header-group list">
+              <li class="header-group__item item">
+                <a href="mailto:info@devstudio.com" class="header-group__link">
+                  <svg class="header-group__icon icon-envelope" width="" height="">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-group__item item">
+                <a href="tel+380961111111" class="header-group__link">
+                  <svg class="header-group__icon icon-smartphone" width="" height="">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="header-social social list">
+              <li class="socials-item">
+                <a
+                  class="social-link link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Instagram"
+                >
+                <span class="social-link_name">Instagram</span>                
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Twitter"
+                >
+                <span class="social-link_name">Twitter</span>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Facebook"
+                >
+                <span class="social-link_name">Facebook</span>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="social-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="иконка Linkedin"
+                >
+                <span class="social-link_name">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <ul class="site-nav list">
-          <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link ">Студия</a>
-          </li>
-          <li class="site-nav__item  site-nav__item--current">
-            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Контакты</a>
-          </li>
-        </ul>
-        <ul class="header-group list">
-          <li class="header-group__item item">
-            <a href="mailto:info@devstudio.com" class="header-group__link">
-              <svg class="header-group__icon icon-envelope" width="" height="">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-item item">
-            <a href="tel+380961111111" class="header-group__link">
-              <svg class="header-group__icon icon-smartphone" width="" height="">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
+        
+        
+        </nav>
     </header>
 
     <!-- PROJECTS -->
@@ -106,13 +155,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/web-site/techno-l.jpg 1x,
+                      ./images/all/web-site/techno-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/web-site/techno-m.jpg 1x,
+                      ./images/all/web-site/techno-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                        ./images/all/web-site/techno-s.jpg 1x,
+                        ./images/all/web-site/techno-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/web-site/techno.jpg"
+                    src="./images/all/web-site/techno-s.jpg"
                     alt="Технокряк"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -132,13 +201,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/design/poster-l.jpg 1x,
+                      ./images/all/design/poster-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/design/poster-m.jpg 1x,
+                      ./images/all/design/poster-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                        ./images/all/design/poster-s.jpg 1x,
+                        ./images/all/design/poster-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/design/poster.jpg"
+                    src="./images/all/design/poster-s.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -158,13 +247,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/apps/restor-l.jpg 1x,
+                      ./images/all/apps/restor-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/apps/restor-m.jpg 1x,
+                      ./images/all/apps/restor-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/apps/restor-s.jpg 1x,
+                        ./images/all/apps/restor-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/apps/restor.jpg"
+                    src="./images/all/apps/restor-s.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -184,13 +293,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/marketing/prime-l.jpg 1x,
+                      ./images/all/marketing/prime-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/marketing/prime-m.jpg 1x,
+                      ./images/all/marketing/prime-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/marketing/prime-s.jpg 1x,
+                      ./images/all/marketing/prime-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/marketing/prime.jpg"
+                    src="./images/all/marketing/prime-s.jpg"
                     alt="Проект Prime"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -210,13 +339,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/apps/boxes-l.jpg 1x,
+                      ./images/all/apps/boxes-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/apps/boxes-m.jpg 1x,
+                      ./images/all/apps/boxes-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/apps/boxes-s.jpg 1x,
+                      ./images/all/apps/boxes-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/apps/boxes.jpg"
+                    src="./images/all/apps/boxes-s.jpg"
                     alt="Проект Boxes"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -236,13 +385,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/web-site/inspir-l.jpg 1x,
+                      ./images/all/web-site/inspir-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/web-site/inspir-m.jpg 1x,
+                      ./images/all/web-site/inspir-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/web-site/inspir-s.jpg 1x,
+                      ./images/all/web-site/inspir-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/web-site/inspir.jpg"
-                    alt="Inspirstion has no Borders"
-                    width="370"
+                    src="./images/all/web-site/inspir-s.jpg"
+                    alt="Inspirition has no Borders"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -262,13 +431,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/design/ltd-l.jpg 1x,
+                      ./images/all/design/ltd-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/design/ltd-m.jpg 1x,
+                      ./images/all/design/ltd-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/design/ltd-s.jpg 1x,
+                      ./images/all/design/ltd-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/design/ltd.jpg"
+                    src="./images/all/design/ltd-s.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -288,13 +477,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/marketing/lab-l.jpg 1x,
+                      ./images/all/marketing/lab-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/marketing/lab-m.jpg 1x,
+                      ./images/all/marketing/lab-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/marketing/lab-s.jpg 1x,
+                      ./images/all/marketing/lab-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/marketing/lab.jpg"
+                    src="./images/all/marketing/lab-s.jpg"
                     alt="Проект LAB"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -314,13 +523,33 @@
             <li class="proj-list__item card">
               <a class="proj-list__link" href="">
                 <div class="thumb">
-                  <img
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="
+                      ./images/all/apps/growing-l.jpg 1x,
+                      ./images/all/apps/growing-l@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(min-width: 768px)"
+                      srcset="
+                      ./images/all/apps/growing-m.jpg 1x,
+                      ./images/all/apps/growing-m@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <source media="(max-width: 767px)"
+                      srcset="
+                      ./images/all/apps/growing-s.jpg 1x,
+                      ./images/all/apps/growing-s@2x.jpg 2x"
+                      type="image/jpg"
+                    >
+                    <img
                     class="thumb__image"
-                    src="./images/all/apps/growing.jpg"
+                    src="./images/all/apps/growing-s.jpg"
                     alt="Growing Business"
-                    width="370"
+                    width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="overlay">
                     <div class="overlay__card">
                       <p class="overlay__text">
@@ -440,6 +669,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
