@@ -952,10 +952,16 @@ img {
 
 /* Site Nav */
 .site-nav {
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
@@ -1119,7 +1125,6 @@ img {
 
 .header-group__link:not(:last-child) {
   color: var(--accent-cl);
-  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
