@@ -1,6 +1,7 @@
 /* -- ABOUT -- */
 
 .about__list {    
+    margin: -15px;
 
     @include mq(tablet) {
 
@@ -21,35 +22,38 @@
 
 .about__item {
 
-    margin-bottom: 30px;
+    margin: 15px;
 
     @include mq(tablet) {
         
-        width: 354px;
+        // width: 354px;
 
-        &:nth-child(odd) {
-            margin-right: 30px;
-        }
+        // &:nth-child(odd) {
+        //     margin-right: 30px;
+        // }
 
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
+        // &:nth-child(-n+2) {
+        //     margin-bottom: 30px;
+        // }
+        flex-basis: calc((100% - 60px)/2);
 
     }
 
     @include mq(desktop) {
 
-        width: 270px;
-        height: 100%;
+        // width: 270px;
+        // height: 100%;
 
-        &:nth-child(-n+2) {
-            margin-bottom: 0;
-        }
+        // margin-bottom: 0;
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+        // &:nth-child(-n+2) {
+        //     margin-bottom: 0;
+        // }
 
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
+        flex-basis: calc((100% - 120px)/4);
     }
     
 }

@@ -1,9 +1,9 @@
 /* -- TEAM -- */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    justify-content: center;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    // justify-content: center;
 
     background-color: var(--secondary-bg-cl);
 }
@@ -59,7 +59,7 @@
     }
 
     @include mq(desktop) {
-        flex-basis: calc((100%-120px)/4);
+        flex-basis: calc((100% - 120px)/4);
 
     }
     
@@ -76,7 +76,16 @@
     justify-content: center;
     padding-bottom: 0;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @include mq(tablet) {    
+
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 50px;
+
+    }
 }
 
 

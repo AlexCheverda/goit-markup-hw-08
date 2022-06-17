@@ -34,7 +34,15 @@
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 60px;
+
+    @include mq(tablet) {
+        min-height: 80px;
+    }
+
+    // @include mq(desktop) {
+        
+    // }
 }
 
 .menu-button {

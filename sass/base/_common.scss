@@ -38,10 +38,20 @@ body.modal-open {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    @include mq(tablet) {
+        
+        
+    }
+
+    @include mq(desktop) {
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }

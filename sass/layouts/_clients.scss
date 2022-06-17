@@ -12,9 +12,10 @@
 }
 
 .clients__title {
+    margin-bottom: 30px;
+    
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
     
     // @media screen and (min-width: 768px) and (max-width: 1199.98px)
     @include mq(tablet) {
@@ -26,6 +27,8 @@
 
     // @media screen and (min-width: 1200px)
     @include mq(desktop) {
+        margin-bottom: 50px;
+
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
